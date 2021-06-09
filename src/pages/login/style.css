@@ -1,0 +1,89 @@
+* {
+    background-color: #32A24C;
+}
+.welcome {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.9rem;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.instructions {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.login {
+    text-align: center;
+}
+label {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 35px;
+}
+input {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 30%;
+    height: 40px;
+    outline: none;
+}
+.forgot-password {
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.enter {
+    background: #111111;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 18%;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 42px;
+    text-align: center;
+}
+.enter:hover {
+    text-decoration: underline;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.register a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 42px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.register a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,72 @@
+* {
+    background-color: #32A24C;
+}
+
+.instructions-password {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.send-password {
+    text-align: center;
+}
+label {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 35px;
+}
+input {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 30%;
+    height: 40px;
+    outline: none;
+}
+
+.button-send-password {
+    background: #111111;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 18%;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 42px;
+    text-align: center;
+    margin-top: 2rem;
+}
+.button-send-password:hover {
+    text-decoration: underline;
+}
+
+.backlogin {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.backlogin a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 42px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.backlogin a:hover {
+    text-decoration: underline;
+}

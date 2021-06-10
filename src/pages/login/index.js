@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+
 function Login() {
     return (
         <section className="description">
@@ -20,7 +21,7 @@ function Login() {
                 </button>
             </form>
             <div className="register">
-                <a href="#">Não possui conta? Cadastre-se</a>
+                <a href="/register">Não possui conta? Cadastre-se</a>
             </div>
         </section>
     )

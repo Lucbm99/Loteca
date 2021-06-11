@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 function ForgotPassword() {
     return (
@@ -14,7 +15,7 @@ function ForgotPassword() {
                 </button>
             </form>
             <div className="backlogin">
-                <a href="#">Voltar ao login</a>
+                <Link to="/">Voltar ao login</Link>
             </div>
         </section>
     )

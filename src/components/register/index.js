@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 function Register() {
     return (
@@ -22,7 +23,7 @@ function Register() {
                 </button>
             </form>
             <div className="back-login">
-                <a href="/">Já possui conta? Faça seu login</a>
+                <Link to="/">Já possui conta? Faça seu login</Link>
             </div>
         </section>
     )

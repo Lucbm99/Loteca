@@ -31,7 +31,19 @@ input {
     height: 40px;
     outline: none;
 }
-
+i {
+    position: absolute;
+    top: 42.5%;
+    right: 37%;
+    background: #fff !important;
+}
+i:hover {
+    color: #00fcb6;
+    cursor: pointer;
+}
+svg:not(:root).svg-inline--fa {
+    background: #fff !important;
+}
 .button-register {
     background: #111111;
     border: 1px solid #000000;

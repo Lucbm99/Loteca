@@ -39,6 +39,19 @@ input {
     height: 40px;
     outline: none;
 }
+i.eye-login {
+    position: absolute;
+    top: 43%;
+    right: 37%;
+    background: #fff !important;
+}
+i.eye-login:hover {
+    color: #00fcb6;
+    cursor: pointer;
+}
+svg:not(:root).svg-inline--fa {
+    background: #fff !important;
+}
 .forgot-password {
     width: 65%;
     display: flex;

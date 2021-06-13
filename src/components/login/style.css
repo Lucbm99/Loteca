@@ -41,7 +41,7 @@ input {
 }
 i.eye-login {
     position: absolute;
-    top: 43%;
+    top: 32.5%;
     right: 37%;
     background: #fff !important;
 }
@@ -62,6 +62,7 @@ svg:not(:root).svg-inline--fa {
 }
 .forgot-password:hover {
     text-decoration: underline;
+    color: #fff !important;
 }
 .enter {
     background: #111111;
@@ -99,4 +100,5 @@ svg:not(:root).svg-inline--fa {
 }
 .register a:hover {
     text-decoration: underline;
+    color: #fff !important;
 }

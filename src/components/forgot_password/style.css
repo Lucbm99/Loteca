@@ -69,4 +69,5 @@ input {
 }
 .backlogin a:hover {
     text-decoration: underline;
+    color: #fff !important;
 }

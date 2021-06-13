@@ -33,7 +33,7 @@ input {
 }
 i {
     position: absolute;
-    top: 42.5%;
+    top: 34.5%;
     right: 37%;
     background: #fff !important;
 }
@@ -81,4 +81,5 @@ svg:not(:root).svg-inline--fa {
 }
 .back-login a:hover {
     text-decoration: underline;
+    color: #fff !important;
 }

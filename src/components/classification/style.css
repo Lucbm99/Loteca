@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.button-results {
+    display: flex;
+    justify-content: center;
+}
+button.send-results {
+    background-color: red;
+    color: #fff;
+    border-radius: 10px;
+    outline: 0;
+    cursor: pointer;
+    width: 20%;
+    margin-top: 1rem;
+}
+strong {
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.welcome-message {
+    color: #fff;
+    margin-top: 1rem;
+    padding: 1rem;
+}

@@ -1,0 +1,38 @@
+.orientations {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+    margin-top: 20px;
+}
+.button-send {
+    display: flex;
+    justify-content: center;
+}
+button.send-guesses {
+    background-color: red;
+    color: #fff;
+    border-radius: 10px;
+    outline: 0;
+    cursor: pointer;
+    width: 20%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.back-classification {
+    display: flex;
+    justify-content: center;
+}
+.back-classification a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.back-classification a:hover {
+    text-decoration: underline;
+    color: #fff !important;
+}

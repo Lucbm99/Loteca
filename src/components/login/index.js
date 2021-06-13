@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { useState } from 'react';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,6 +9,9 @@ const eye = <FontAwesomeIcon icon={faEye} />;
 
 function Login() {
     const [passwordShown, setPasswordShown] = useState(false);
+
+    const history = useHistory();
+    const handleClick = () => history.push('/classification');
 
     const togglePasswordVisiblity = () => {
         setPasswordShown(passwordShown ? false : true);
@@ -39,7 +42,7 @@ function Login() {
 
                     <Link to="/forgotpassword" className="forgot-password">Esqueci a senha</Link><br />
                     
-                    <button className="enter">
+                    <button className="enter" onClick={handleClick}>
                         Entrar
                     </button>
                 </form>

@@ -9,7 +9,7 @@
     justify-content: center;
 }
 button.send-guesses {
-    background-color: red;
+    background-color: #C93333;
     color: #fff;
     border-radius: 10px;
     outline: 0;
@@ -33,6 +33,6 @@ button.send-guesses {
     text-decoration: none;
 }
 .back-classification a:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
     color: #fff !important;
 }

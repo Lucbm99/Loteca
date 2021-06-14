@@ -8,6 +8,7 @@ import Register from './components/register';
 import ForgotPassword from './components/forgot_password';
 import Classification from './components/classification';
 import Games from './components/games';
+import Profile from './components/profile';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route exact path="/games">
           <Games />
+        </Route>
+        <Route exact path="/profile">
+          <Profile />
         </Route>
       </Switch>
     </BrowserRouter>

@@ -41,8 +41,8 @@ input {
 }
 i.eye-login {
     position: absolute;
-    top: 32.5%;
-    right: 37%;
+    top: 32.4%;
+    right: 36%;
     background: #fff !important;
 }
 i.eye-login:hover {
@@ -61,7 +61,7 @@ svg:not(:root).svg-inline--fa {
     font-family: "Roboto", sans-serif;
 }
 .forgot-password:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
     color: #fff !important;
 }
 .enter {
@@ -99,6 +99,6 @@ svg:not(:root).svg-inline--fa {
     text-decoration: none;
 }
 .register a:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
     color: #fff !important;
 }

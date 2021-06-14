@@ -3,11 +3,19 @@ import { Table } from 'reactstrap';
 import './style.css';
 import { useHistory } from 'react-router-dom';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
+const avatarProfile = <FontAwesomeIcon icon={faUserAlt} />;
+
 const Classification = () => {
 
     const history = useHistory();
     const handleGames = () => {
         history.push('/games');
+    }
+
+    const handleProfile = () => {
+        history.push('/profile');
     }
 
     return (
@@ -17,6 +25,7 @@ const Classification = () => {
             <div className="button-results">
                 <button className="send-results" onClick={handleGames}>Enviar palpites</button>
             </div>
+            <i style={{ position: 'absolute', right: '5%', top: '5%', padding: '8px', borderRadius: '10px'}} onClick={handleProfile}>{avatarProfile}</i>
             <strong>Classificação do campeonato - Brasileirão - Returno</strong>
             <Table className="table-striped table-hover table-dark" responsive>
             <thead>

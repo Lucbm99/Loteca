@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Input } from 'reactstrap';
+import { Table, Input, Card, CardTitle, CardText } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import './style.css';
 
@@ -8,10 +8,14 @@ function Games() {
         <div>
             <p className="orientations">Preencha os seus palpites nos jogos abaixo e<br/>
             clique em Enviar, ao finalizar:</p><br/>
-
-                <Table className="table-striped table-light" responsive>
+                <Card body inverse color="warning">
+                    <CardTitle tag="h5">Atenção!</CardTitle>
+                    <CardText>O envio dos palpites são permitidos até às 14hrs de sábado.</CardText>
+                </Card>
+                <Table className="table-striped table-light" responsive size="sm">
                 <thead>
                     <tr>
+                        <th>#</th>
                         <th>Mandante</th>
                         <th>Empate</th>
                         <th>Visitante</th>
@@ -19,71 +23,85 @@ function Games() {
                 </thead>
                 <tbody>
                     <tr>
+                        <td>1</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>2</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>3</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>4</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>5</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>6</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>7</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>8</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>9</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>10</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>11</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>12</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>13</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>
                     </tr>
                     <tr>
+                        <td>14</td>
                         <td><Input type="checkbox" />São Paulo</td>
                         <td><Input type="checkbox" /></td>
                         <td><Input type="checkbox" />Flamengo</td>

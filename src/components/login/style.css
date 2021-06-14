@@ -2,7 +2,7 @@
     background-color: #32A24C;
 }
 .welcome {
-    font-family: 'Roboto';
+    font-family: 'Lexend', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.9rem;
@@ -11,7 +11,7 @@
     color: #FFFFFF;
 }
 .instructions {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.5rem;
@@ -24,7 +24,7 @@
 }
 label {
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
@@ -58,7 +58,7 @@ svg:not(:root).svg-inline--fa {
     justify-content: flex-end;
     color: #fff;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Lexend", sans-serif;
 }
 .forgot-password:hover {
     text-decoration: underline !important;
@@ -73,7 +73,7 @@ svg:not(:root).svg-inline--fa {
     height: 40px;
     cursor: pointer;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.4rem;
@@ -90,7 +90,7 @@ svg:not(:root).svg-inline--fa {
     margin-top: 4rem;
 }
 .register a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.4rem;

@@ -9,6 +9,7 @@ import ForgotPassword from './components/forgot_password';
 import Classification from './components/classification';
 import Games from './components/games';
 import Profile from './components/profile';
+import EditProfile from './components/edit-profile';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route exact path="/profile">
           <Profile />
+        </Route>
+        <Route exact path="/edit-profile">
+          <EditProfile />
         </Route>
       </Switch>
     </BrowserRouter>

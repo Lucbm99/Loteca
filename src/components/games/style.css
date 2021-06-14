@@ -4,6 +4,11 @@
     color: #fff;
     margin-top: 20px;
 }
+.card-title, .card-text {
+    background-color: #ffc107!important;
+    text-align: center;
+    color: #111;
+}
 .button-send {
     display: flex;
     justify-content: center;
@@ -18,14 +23,17 @@ button.send-guesses {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1rem;
+    font-family: 'Lexend', sans-serif;
 }
-
+button.send-guesses:hover {
+    text-decoration: underline;
+}
 .back-classification {
     display: flex;
     justify-content: center;
 }
 .back-classification a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;

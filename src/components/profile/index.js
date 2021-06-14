@@ -22,7 +22,7 @@ const Profile = () => {
         <div>
             <i style={{ position: 'absolute', right: '48.7%', top: '6.5%', padding: '8px', borderRadius: '10px'}} >{avatarProfile}</i>
             <div class="update">
-                <Link to="#">Alterar dados</Link>
+                <Link to="/edit-profile">Alterar dados</Link>
             </div>
             <div className="buttons">
                 <button className="backclassification" onClick={handleClassification}>Voltar</button>

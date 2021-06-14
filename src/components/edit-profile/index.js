@@ -7,18 +7,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 const eye = <FontAwesomeIcon icon={faEye} />;
 
-function Register() {
+function EditProfile() {
     const [passwordShown, setPasswordShown] = useState(false);
-    const [nameRegister, setNameRegister] = useState('');
-    const [emailRegister, setEmailRegister] = useState('');
-    const [passwordRegister, setPasswordRegister] = useState('');
-    const [passwordRegister2, setPasswordRegister2] = useState('');
+    const [nameRegister, setNameRegister] = useState('Lucas Baradel');
+    const [emailRegister, setEmailRegister] = useState('lbaradelmarchiori@gmail.com');
+    const [passwordRegister, setPasswordRegister] = useState('abcde3333');
+    const [passwordRegister2, setPasswordRegister2] = useState('abcde3333');
 
     const togglePasswordVisiblity = () => {
         setPasswordShown(passwordShown ? false : true);
     };
 
-    const registerUser = (e) => {
+    const updateUser = (e) => {
         e.preventDefault();
         if(nameRegister === '') {
             alert("Nome inválido ou em branco. Verifique e tente novamente");
@@ -29,14 +29,14 @@ function Register() {
         } else if(passwordRegister2 === '') {
             alert("Confirmação de senha inválida ou em branco. Verifique e tente novamente");
         } else {
-            alert("Cadastro feito com sucesso!!");
+            alert("Alteração feita com sucesso!!");
         }
     }
 
     return (
         <section className="description">
-            <h4 className="instructions-register">
-                Faça seu cadastro preenchendo os campos abaixo:
+            <h4 className="instructions-update">
+                Altere seu cadastro preenchendo os campos abaixo:
             </h4>
             <form className="register-user">
                 <label htmlFor="nome">Nome:</label><br />
@@ -74,15 +74,15 @@ function Register() {
                     onChange={(e)=>setPasswordRegister2(e.target.value)} />
                 <br />
                     
-                <button className="button-register" onClick={registerUser}>
-                    Cadastrar
+                <button className="button-update" onClick={updateUser}>
+                    Alterar
                 </button>
             </form>
-            <div className="back-login">
-                <Link to="/">Já possui conta? Faça seu login</Link>
+            <div className="back-profile">
+                <Link to="/profile">Voltar</Link>
             </div>
         </section>
     )
 }
 
-export default Register;
+export default EditProfile;

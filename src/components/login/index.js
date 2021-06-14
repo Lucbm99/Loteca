@@ -9,9 +9,20 @@ const eye = <FontAwesomeIcon icon={faEye} />;
 
 function Login() {
     const [passwordShown, setPasswordShown] = useState(false);
+    const [textEmail, setTextEmail] = useState('');
+    const [textPassword, setTextPassword] = useState('');
 
     const history = useHistory();
-    const handleClick = () => history.push('/classification');
+    const handleClick = (e) => {
+        e.preventDefault();
+        if(textEmail === '') {
+            alert("Campo e-mail inválido ou em branco. Verifique e tente novamente");
+        } else if (textPassword === '') {
+            alert("Campo senha inválido ou em branco. Verifique e tente novamente");
+        } else {
+            history.push('/classification');
+        }
+    }
 
     const togglePasswordVisiblity = () => {
         setPasswordShown(passwordShown ? false : true);
@@ -30,13 +41,17 @@ function Login() {
                     <input 
                         type="email" 
                         placeholder="Digite seu e-mail..." 
+                        value={textEmail}
+                        onChange={(e) => setTextEmail(e.target.value)}
                         autoFocus />
                     <br />
                     
                     <label htmlFor="password">Senha:</label><br />
                     <input 
                         type={passwordShown ? "text" : "password"}
-                        placeholder="Digite sua senha..." />
+                        placeholder="Digite sua senha..." 
+                        value={textPassword} 
+                        onChange={(e) => setTextPassword(e.target.value)} />
                         <i className="eye-login" onClick={togglePasswordVisiblity}>{eye}</i>
                     <br />
 

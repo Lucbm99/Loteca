@@ -2,7 +2,7 @@
     background-color: #32A24C;
 }
 
-.instructions-password {
+.instructions-update {
     font-family: 'Lexend', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -11,7 +11,7 @@
     text-align: center;
     color: #FFFFFF;
 }
-.send-password {
+.register-user {
     text-align: center;
 }
 label {
@@ -30,10 +30,21 @@ input {
     width: 30%;
     height: 40px;
     outline: none;
-    padding: 10px;
 }
-
-.button-send-password {
+i {
+    position: absolute;
+    top: 34.5%;
+    right: 36%;
+    background: #fff !important;
+}
+i:hover {
+    color: #00fcb6;
+    cursor: pointer;
+}
+svg:not(:root).svg-inline--fa {
+    background: #fff !important;
+}
+.button-update {
     background: #111111;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -50,16 +61,16 @@ input {
     text-align: center;
     margin-top: 2rem;
 }
-.button-send-password:hover {
+.button-update:hover {
     text-decoration: underline;
 }
 
-.backlogin {
+.back-profile {
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
-.backlogin a {
+.back-profile a {
     font-family: 'Lexend', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -68,7 +79,7 @@ input {
     color: #FFFFFF;
     text-decoration: none;
 }
-.backlogin a:hover {
+.back-profile a:hover {
     text-decoration: underline !important;
     color: #fff !important;
 }

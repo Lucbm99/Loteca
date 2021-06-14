@@ -3,7 +3,7 @@
 }
 
 .instructions-register {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.5rem;
@@ -16,7 +16,7 @@
 }
 label {
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
@@ -53,7 +53,7 @@ svg:not(:root).svg-inline--fa {
     height: 40px;
     cursor: pointer;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.4rem;
@@ -71,7 +71,7 @@ svg:not(:root).svg-inline--fa {
     margin-top: 4rem;
 }
 .back-login a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.4rem;

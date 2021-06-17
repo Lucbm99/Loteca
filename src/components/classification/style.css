@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+table {
+    text-align: center !important;
+    padding: 20px !important;
+    border-collapse: inherit !important;
+}
 .button-results {
     display: flex;
     justify-content: center;

@@ -29,7 +29,7 @@ function EditProfile() {
         } else if(passwordRegister2 === '') {
             alert("Confirmação de senha inválida ou em branco. Verifique e tente novamente");
         } else {
-            alert("Alteração feita com sucesso!!");
+            alert("Dados alterados com sucesso!!");
         }
     }
 

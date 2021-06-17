@@ -20,10 +20,12 @@ button.send-guesses {
     outline: 0;
     cursor: pointer;
     width: 20%;
-    margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1rem;
     font-family: 'Lexend', sans-serif;
+}
+.form-check-input[type=checkbox] {
+    margin-right: 2%;
 }
 button.send-guesses:hover {
     text-decoration: underline;

@@ -102,3 +102,45 @@ svg:not(:root).svg-inline--fa {
     text-decoration: underline !important;
     color: #fff !important;
 }
+
+/* responsivo */
+@media (min-width: 320px) and (max-width: 480px) {
+    .welcome {
+        font-size: 1.7rem;
+    }
+    .instructions {
+        font-size: 1.1rem;
+        line-height: normal;
+    }
+    
+    input {
+        width: 90% !important;
+    }
+    .enter {
+        width: 65%;
+    }
+    i.eye-login {
+        top: 40.5%;
+        right: 9%;
+    }
+    .forgot-password {
+        width: 93%;
+    }
+    .register a {
+        font-size: 1rem;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1023px) {
+    input {
+        width: 50% !important;
+    }
+    .forgot-password {
+        width: 74%;
+    }
+}
+@media(min-width: 1024px) and (max-width: 1440px) {
+    .forgot-password {
+        width: 74%;
+    }
+}

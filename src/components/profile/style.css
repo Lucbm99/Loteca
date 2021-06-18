@@ -45,3 +45,10 @@ button.logout {
     width: 20%;
     margin-top: 1rem;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    button.logout, .backclassification {
+        width: 45%;
+    }
+
+}

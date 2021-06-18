@@ -30,9 +30,30 @@ strong {
     padding: 1rem;
     display: flex;
     justify-content: center;
+    text-align: center;
+
 }
 .welcome-message {
     color: #fff;
     margin-top: 1rem;
     padding: 1rem;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    button.send-results {
+        width: 75%;
+    }
+    table {
+        border-collapse: inherit !important;
+        padding: 0 !important;
+    }
+    strong {
+        font-size: 1.1rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    button.send-results {
+        width: 40%;
+    }
 }

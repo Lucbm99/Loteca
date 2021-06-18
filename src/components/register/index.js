@@ -3,20 +3,20 @@ import './style.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
-const eye = <FontAwesomeIcon icon={faEye} />;
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEye } from "@fortawesome/free-solid-svg-icons";
+// const eye = <FontAwesomeIcon icon={faEye} />;
 
 function Register() {
-    const [passwordShown, setPasswordShown] = useState(false);
+    // const [passwordShown, setPasswordShown] = useState(false);
     const [nameRegister, setNameRegister] = useState('');
     const [emailRegister, setEmailRegister] = useState('');
     const [passwordRegister, setPasswordRegister] = useState('');
     const [passwordRegister2, setPasswordRegister2] = useState('');
 
-    const togglePasswordVisiblity = () => {
-        setPasswordShown(passwordShown ? false : true);
-    };
+    // const togglePasswordVisiblity = () => {
+    //     setPaswsordShown(passwordShown ? false : true);
+    // };
 
     const registerUser = (e) => {
         e.preventDefault();
@@ -59,11 +59,12 @@ function Register() {
 
                 <label htmlFor="password">Senha:</label><br />
                 <input 
-                    type={passwordShown ? "text" : "password"}
+                    // type={passwordShown ? "text" : "password"}
+                    type="password"
                     placeholder="Digite sua senha..." 
                     value={passwordRegister}
                     onChange={(e)=>setPasswordRegister(e.target.value)} />
-                    <i onClick={togglePasswordVisiblity}>{eye}</i>
+                    {/* <i onClick={togglePasswordVisiblity}>{eye}</i> */}
                 <br />
 
                 <label htmlFor="password">Redigite sua senha:</label><br />

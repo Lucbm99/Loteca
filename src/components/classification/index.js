@@ -25,8 +25,8 @@ const Classification = () => {
             <div className="button-results">
                 <button className="send-results" onClick={handleGames}>Enviar palpites</button>
             </div>
-            <i style={{ position: 'absolute', right: '5%', top: '5%', padding: '8px', borderRadius: '10px'}} onClick={handleProfile}>{avatarProfile}</i>
-            <strong>Classificação do campeonato - Brasileirão - Returno</strong>
+            <i style={{ position: 'absolute', right: '5%', top: '3%', padding: '8px', borderRadius: '10px'}} onClick={handleProfile}>{avatarProfile}</i>
+            <strong>Classificação do campeonato <br/> Brasileirão - Returno</strong>
             <Table className="table-striped table-hover table-dark" responsive>
                 <thead>
                     <tr>

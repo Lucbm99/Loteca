@@ -3,11 +3,14 @@
     font-size: 1.4rem;
     color: #fff;
     margin-top: 20px;
+    font-family: 'Lexend', sans-serif;
 }
 .card-title, .card-text {
     background-color: #ffc107!important;
     text-align: center;
     color: #111;
+    font-family: 'Lexend', sans-serif;
+
 }
 .button-send {
     display: flex;
@@ -45,4 +48,13 @@ button.send-guesses:hover {
 .back-classification a:hover {
     text-decoration: underline !important;
     color: #fff !important;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .orientations {
+        padding: 3px;
+    }
+    button.send-guesses {
+        width: 50%;
+    }
 }

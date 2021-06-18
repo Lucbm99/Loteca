@@ -3,20 +3,20 @@ import './style.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
-const eye = <FontAwesomeIcon icon={faEye} />;
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEye } from "@fortawesome/free-solid-svg-icons";
+// const eye = <FontAwesomeIcon icon={faEye} />;
 
 function EditProfile() {
-    const [passwordShown, setPasswordShown] = useState(false);
+    // const [passwordShown, setPasswordShown] = useState(false);
     const [nameRegister, setNameRegister] = useState('Lucas Baradel');
     const [emailRegister, setEmailRegister] = useState('lbaradelmarchiori@gmail.com');
     const [passwordRegister, setPasswordRegister] = useState('abcde3333');
     const [passwordRegister2, setPasswordRegister2] = useState('abcde3333');
 
-    const togglePasswordVisiblity = () => {
-        setPasswordShown(passwordShown ? false : true);
-    };
+    // const togglePasswordVisiblity = () => {
+    //     setPasswordShown(passwordShown ? false : true);
+    // };
 
     const updateUser = (e) => {
         e.preventDefault();
@@ -59,11 +59,12 @@ function EditProfile() {
 
                 <label htmlFor="password">Senha:</label><br />
                 <input 
-                    type={passwordShown ? "text" : "password"}
+                    // type={passwordShown ? "text" : "password"}
+                    type="password"
                     placeholder="Digite sua senha..." 
                     value={passwordRegister}
                     onChange={(e)=>setPasswordRegister(e.target.value)} />
-                    <i onClick={togglePasswordVisiblity}>{eye}</i>
+                    {/* <i onClick={togglePasswordVisiblity}>{eye}</i> */}
                 <br />
 
                 <label htmlFor="password">Redigite sua senha:</label><br />

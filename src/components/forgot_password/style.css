@@ -72,3 +72,24 @@ input {
     text-decoration: underline !important;
     color: #fff !important;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .instructions-password {
+        line-height: 1.6rem;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }   
+    .button-send-password {
+        width: 40%;
+    }
+    .backlogin a {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .instructions-password {
+        line-height: 1.6rem;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+}

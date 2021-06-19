@@ -2,6 +2,13 @@ a {
     color: #FFFFFF !important;
     text-decoration: none !important;
 }
+.avatar-user {
+    position: absolute;
+    top: 6.5%; 
+    right: 20%;
+    padding: 8px;
+    border-radius: 10px 
+}
 .update {
     font-family: 'Lexend', sans-serif;
     font-style: normal;
@@ -50,5 +57,6 @@ button.logout {
     button.logout, .backclassification {
         width: 45%;
     }
+
 
 }

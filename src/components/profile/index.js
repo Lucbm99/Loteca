@@ -2,10 +2,10 @@ import React from 'react';
 import './style.css';
 
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from 'react-router-dom';
-const avatarProfile = <FontAwesomeIcon icon={faUserAlt} />;
+// const avatarProfile = <FontAwesomeIcon icon={faUserAlt} />;
 
 const Profile = () => {
     const history = useHistory();
@@ -20,7 +20,7 @@ const Profile = () => {
     }
     return (
         <div>
-            <i style={{ position: 'absolute', right: '48.7%', top: '6.5%', padding: '8px', borderRadius: '10px'}} >{avatarProfile}</i>
+            {/* <i className="avatar-user">{avatarProfile}</i> */}
             <div class="update">
                 <Link to="/edit-profile">Alterar dados</Link>
             </div>

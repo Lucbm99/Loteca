@@ -39,21 +39,24 @@ input {
     height: 40px;
     outline: none;
 }
-i.eye-login {
-    position: absolute;
-    top: 32.4%;
-    right: 36%;
-    background: #fff !important;
+input[type="checkbox"] {
+    width: 1%;
 }
-i.eye-login:hover {
-    color: #00fcb6;
-    cursor: pointer;
+.show-password {
+    display: flex;
+    justify-content: center;
+}
+.text-show-password {
+    margin-top: 7px;
+    color: #fff;
+    font-family: 'Lexend', serif;
 }
 svg:not(:root).svg-inline--fa {
     background: #fff !important;
 }
 .forgot-password {
     width: 65%;
+    margin-top: -2.6rem;
     display: flex;
     justify-content: flex-end;
     color: #fff;
@@ -112,7 +115,16 @@ svg:not(:root).svg-inline--fa {
         font-size: 1.1rem;
         line-height: normal;
     }
-    
+    input[type="checkbox"] {
+        width: 5% !important;
+    }
+    .show-password {
+        justify-content: left !important;
+        margin-left: 22px;
+    }
+    .text-show-password {
+        text-align: left !important;
+    }
     input {
         width: 90% !important;
     }
@@ -137,6 +149,15 @@ svg:not(:root).svg-inline--fa {
     }
     .forgot-password {
         width: 74%;
+    }
+    input[type="checkbox"] {
+        width: 2% !important;
+    }
+    .show-password {
+        margin-left: -6rem;
+    }
+    .text-show-password {
+        text-align: left !important;
     }
 }
 @media(min-width: 1024px) and (max-width: 1440px) {

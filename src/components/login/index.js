@@ -3,12 +3,8 @@ import './style.css';
 import { Link, useHistory } from 'react-router-dom';
 import { useState } from 'react';
 
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEye } from "@fortawesome/free-solid-svg-icons";
-// const eye = <FontAwesomeIcon icon={faEye} />;
-
 function Login() {
-    // const [passwordShown, setPasswordShown] = useState(false);
+    const [passwordShown, setPasswordShown] = useState(false);
     const [textEmail, setTextEmail] = useState('');
     const [textPassword, setTextPassword] = useState('');
 
@@ -24,9 +20,9 @@ function Login() {
         }
     }
 
-    // const togglePasswordVisiblity = () => {
-    //     setPasswordShown(passwordShown ? false : true);
-    // };
+    const togglePasswordVisiblity = () => {
+        setPasswordShown(passwordShown ? false : true);
+    };
 
     return (
             <section className="description">
@@ -48,14 +44,15 @@ function Login() {
                     
                     <label htmlFor="password">Senha:</label><br />
                     <input 
-                        // type={passwordShown ? "text" : "password"}
-                        type="password"
+                        type={passwordShown ? "text" : "password"}
                         placeholder="Digite sua senha..." 
                         value={textPassword} 
                         onChange={(e) => setTextPassword(e.target.value)} />
-                        {/* <i className="eye-login" onClick={togglePasswordVisiblity}>{eye}</i> */}
                     <br />
-
+                    <span className="show-password">
+                        <input type="checkbox" onClick={togglePasswordVisiblity}/>
+                        <p className="text-show-password">Mostrar senha</p>
+                    </span>
                     <Link to="/forgotpassword" className="forgot-password">Esqueci a senha</Link><br />
                     
                     <button className="enter" onClick={handleClick}>

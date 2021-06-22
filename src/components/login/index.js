@@ -49,10 +49,7 @@ function Login() {
                         value={textPassword} 
                         onChange={(e) => setTextPassword(e.target.value)} />
                     <br />
-                    <span className="show-password">
-                        <input type="checkbox" onClick={togglePasswordVisiblity}/>
-                        <p className="text-show-password">Mostrar senha</p>
-                    </span>
+                    <span className="show-password" role="button" tabindex="0" onClick={togglePasswordVisiblity}>Mostrar</span>
                     <Link to="/forgotpassword" className="forgot-password">Esqueci a senha</Link><br />
                     
                     <button className="enter" onClick={handleClick}>

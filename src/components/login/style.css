@@ -39,24 +39,33 @@ input {
     height: 40px;
     outline: none;
 }
-input[type="checkbox"] {
-    width: 1%;
-}
 .show-password {
-    display: flex;
-    justify-content: center;
-}
-.text-show-password {
-    margin-top: 7px;
-    color: #fff;
-    font-family: 'Lexend', serif;
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    outline-width: 2px;
+    padding: 0 8px;
+    text-decoration: none;
+    z-index: 0;
+    color: #111;
+    position: absolute;
+    z-index: 1;
+    margin-top: -33px;
+    margin-left: 10%;
 }
 svg:not(:root).svg-inline--fa {
     background: #fff !important;
 }
 .forgot-password {
     width: 65%;
-    margin-top: -2.6rem;
     display: flex;
     justify-content: flex-end;
     color: #fff;
@@ -115,25 +124,14 @@ svg:not(:root).svg-inline--fa {
         font-size: 1.1rem;
         line-height: normal;
     }
-    input[type="checkbox"] {
-        width: 5% !important;
-    }
-    .show-password {
-        justify-content: left !important;
-        margin-left: 22px;
-    }
-    .text-show-password {
-        text-align: left !important;
-    }
     input {
         width: 90% !important;
     }
     .enter {
         width: 65%;
     }
-    i.eye-login {
-        top: 40.5%;
-        right: 9%;
+    .show-password {
+        margin-left: 23.4%;
     }
     .forgot-password {
         width: 93%;
@@ -147,21 +145,23 @@ svg:not(:root).svg-inline--fa {
     input {
         width: 50% !important;
     }
+    .show-password {
+        margin-left: 15%;
+    }
     .forgot-password {
         width: 74%;
-    }
-    input[type="checkbox"] {
-        width: 2% !important;
-    }
-    .show-password {
-        margin-left: -6rem;
-    }
-    .text-show-password {
-        text-align: left !important;
     }
 }
 @media(min-width: 1024px) and (max-width: 1440px) {
+    .show-password {
+        margin-left: 18%;
+    }
     .forgot-password {
         width: 74%;
+    }
+}
+@media(min-width: 1441px) and (max-width: 2560px) {
+    .show-password {
+        margin-left: 10%;
     }
 }

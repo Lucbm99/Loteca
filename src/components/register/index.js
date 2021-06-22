@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faEye } from "@fortawesome/free-solid-svg-icons";
@@ -28,6 +27,8 @@ function Register() {
             alert("Senha inválido ou em branco. Verifique e tente novamente");
         } else if(passwordRegister2 === '') {
             alert("Confirmação de senha inválida ou em branco. Verifique e tente novamente");
+        } else if (passwordRegister !== passwordRegister2) {
+            alert("Senhas não conferem. Verifique e tente novamente.")
         } else {
             alert("Cadastro feito com sucesso!!");
         }

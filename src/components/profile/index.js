@@ -2,12 +2,10 @@ import React from 'react';
 import './style.css';
 
 import { Link } from 'react-router-dom';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from 'react-router-dom';
-// const avatarProfile = <FontAwesomeIcon icon={faUserAlt} />;
 
 const Profile = () => {
+
     const history = useHistory();
 
     const handleClassification = () => {
@@ -20,7 +18,7 @@ const Profile = () => {
     }
     return (
         <div>
-            {/* <i className="avatar-user">{avatarProfile}</i> */}
+            <img className="img-avatar" src="/avatar-icon.png" alt="avatar" />
             <div class="update">
                 <Link to="/edit-profile">Alterar dados</Link>
             </div>

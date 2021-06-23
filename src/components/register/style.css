@@ -31,15 +31,27 @@ input {
     height: 40px;
     outline: none;
 }
-i {
-    position: absolute;
-    top: 34.5%;
-    right: 36%;
-    background: #fff !important;
-}
-i:hover {
-    color: #00fcb6;
+.show-password-register {
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    box-sizing: border-box;
     cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    outline-width: 2px;
+    padding: 0 8px;
+    text-decoration: none;
+    z-index: 0;
+    color: #111;
+    position: absolute;
+    z-index: 1;
+    margin-top: -33px;
+    margin-left: 10%;
 }
 svg:not(:root).svg-inline--fa {
     background: #fff !important;
@@ -97,9 +109,25 @@ svg:not(:root).svg-inline--fa {
         line-height: normal;
         font-size: 1rem;
     }
+    .show-password-register {
+        margin-left: 46%;
+    }
+}
+@media(min-width: 768px) and (max-width: 1023px) {
+    .show-password-register {
+        margin-left: 25%;
+    }
 }
 @media(min-width: 1024px) and (max-width: 1440px) {
     input {
         width: 50% !important;
+    }
+    .show-password-register {
+        margin-left: 25%;
+    }
+}
+@media(min-width: 1441px) and (max-width: 2560px) {
+    .show-password-register {
+        margin-left: 15%;
     }
 }

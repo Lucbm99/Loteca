@@ -154,7 +154,7 @@ svg:not(:root).svg-inline--fa {
 }
 @media(min-width: 1024px) and (max-width: 1440px) {
     .show-password {
-        margin-left: 18%;
+        margin-left: 20%;
     }
     .forgot-password {
         width: 74%;

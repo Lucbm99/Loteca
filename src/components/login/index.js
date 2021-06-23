@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import { Link, useHistory } from 'react-router-dom';
-import { useState } from 'react';
 
 function Login() {
     const [passwordShown, setPasswordShown] = useState(false);
@@ -49,11 +48,24 @@ function Login() {
                         value={textPassword} 
                         onChange={(e) => setTextPassword(e.target.value)} />
                     <br />
-                    <span className="show-password" role="button" tabindex="0" onClick={togglePasswordVisiblity}>Mostrar</span>
-                    <Link to="/forgotpassword" className="forgot-password">Esqueci a senha</Link><br />
+                    <span 
+                        className="show-password" 
+                        role="button" 
+                        tabindex="0" 
+                        onClick={togglePasswordVisiblity}>
+                        Mostrar
+                    </span>
+                    <Link 
+                        to="/forgotpassword" 
+                        className="forgot-password">
+                            Esqueci a senha
+                    </Link>
+                    <br />
                     
-                    <button className="enter" onClick={handleClick}>
-                        Entrar
+                    <button 
+                        className="enter" 
+                        onClick={handleClick}>
+                            Entrar
                     </button>
                 </form>
                 <div className="register">

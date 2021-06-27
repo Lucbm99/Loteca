@@ -38,6 +38,8 @@ Npm: https://www.npmjs.com/
 
 🚧  Em andamento 🚧
 
+Vídeo demo: https://youtu.be/c-deiBvqhXE
+
 Link para acesso: http://loteca.vercel.app/
 
 

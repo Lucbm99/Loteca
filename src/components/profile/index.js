@@ -13,8 +13,9 @@ const Profile = () => {
     }
 
     const handleLogout = () => {
-        alert("Tem certeza que deseja sair do sistema?");
-        history.push('/');
+        if (window.confirm("Tem certeza que deseja sair do sistema?")) {
+            history.push('/');
+        }
     }
     return (
         <div>

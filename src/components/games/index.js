@@ -1,9 +1,18 @@
 import React from 'react';
 import { Table, Input, Card, CardTitle, CardText } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './style.css';
 
 function Games() {
+    const history = useHistory();
+
+    const handleGuesses = () => {
+        if (window.confirm("Deseja enviar os jogos?")) {
+            alert("Jogos enviados com sucesso!");
+            history.push('/classification');
+        }
+    }
+
     return (
         <div>
             <p className="orientations">Preencha os seus palpites nos jogos abaixo e<br/>
@@ -110,7 +119,7 @@ function Games() {
             </Table>
 
             <div className="button-send">
-                <button className="send-guesses">Enviar</button>
+                <button className="send-guesses" onClick={handleGuesses}>Enviar</button>
             </div>
 
             <div className="back-classification">

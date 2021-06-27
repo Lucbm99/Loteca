@@ -119,11 +119,8 @@ svg:not(:root).svg-inline--fa {
     }
 }
 @media(min-width: 1024px) and (max-width: 1440px) {
-    input {
-        width: 50% !important;
-    }
     .show-password-register {
-        margin-left: 25%;
+        margin-left: 15%;
     }
 }
 @media(min-width: 1441px) and (max-width: 2560px) {

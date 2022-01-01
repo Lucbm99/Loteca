@@ -3,7 +3,7 @@ import './style.css';
 import { Link, useHistory } from 'react-router-dom';
 
 function Login() {
-    const [passwordShown, setPasswordShown] = useState(false);
+    // const [passwordShown, setPasswordShown] = useState(false);
     const [textEmail, setTextEmail] = useState('');
     const [textPassword, setTextPassword] = useState('');
 
@@ -19,9 +19,9 @@ function Login() {
         }
     }
 
-    const togglePasswordVisiblity = () => {
-        setPasswordShown(passwordShown ? false : true);
-    };
+    // const togglePasswordVisiblity = () => {
+    //     setPasswordShown(passwordShown ? false : true);
+    // };
 
     return (
             <section className="description">
@@ -43,18 +43,19 @@ function Login() {
                     
                     <label htmlFor="password">Senha:</label><br />
                     <input 
-                        type={passwordShown ? "text" : "password"}
+                        // type={passwordShown ? "text" : "password"},
+                        type="password"
                         placeholder="Digite sua senha..." 
                         value={textPassword} 
                         onChange={(e) => setTextPassword(e.target.value)} />
                     <br />
-                    <span 
+                    {/* <span 
                         className="show-password" 
                         role="button" 
                         tabindex="0" 
                         onClick={togglePasswordVisiblity}>
                         Mostrar
-                    </span>
+                    </span> */}
                     <Link 
                         to="/forgotpassword" 
                         className="forgot-password">

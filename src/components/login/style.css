@@ -21,6 +21,10 @@
 }
 .login {
     text-align: center;
+    border: 1px solid #111;
+    border-radius: 10px;
+    padding: 15px 0;
+    margin: 2%;
 }
 label {
     color: #fff;
@@ -152,15 +156,18 @@ svg:not(:root).svg-inline--fa {
         width: 74%;
     }
 }
-@media(min-width: 1024px) and (max-width: 1440px) {
+@media(min-width: 1024px) and (max-width: 1439px) {
+    input {
+        width: 34% !important;
+    }
     .show-password {
-        margin-left: 10%;
+        margin-left: 11%;
     }
     .forgot-password {
-        width: 65%;
+        width: 67%;
     }
 }
-@media(min-width: 1441px) and (max-width: 2560px) {
+@media(min-width: 1440px) and (max-width: 2560px) {
     .show-password {
         margin-left: 10%;
     }

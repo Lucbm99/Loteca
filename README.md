@@ -40,7 +40,7 @@ Npm: https://www.npmjs.com
 
 Vídeo demo: https://youtu.be/c-deiBvqhXE
 
-Link para acesso: http://loteca.vercel.app/
+Link para acesso: http://loteca.vercel.app
 
 
 ## 🛠️ Feito com
